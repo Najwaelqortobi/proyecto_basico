@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+}
+
+.nav div{
+    display: flex;
+}
+.nav1{
+    background-color: hsl(240, 37%, 29%);
+    }
+.linea-con-estrella {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.linea {
+    flex-grow: 1;
+    height: 1px; /* Grosor de la línea */
+    background-color: black; /* Color de la línea */
+}
+.estrella {
+    font-size: 24px; /* Tamaño de la estrella */
+    color: black; /* Color de la estrella */
+    margin: 0 10px; /* Espaciado alrededor de la estrella */
+}
+
+

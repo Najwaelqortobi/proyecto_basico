@@ -33,7 +33,6 @@ main{
     background-color: lightblue;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 footer{
     width: 80%;
@@ -75,24 +74,26 @@ main div a{
     
 
 }
-ul li{
+nav ul li{
     width: 8rem;
-    height: 3.5rem;
+    height: 3.3rem;
     border: 0.1rem solid green;
     margin: 0.5rem;
     background: orange;
     border-radius: 0.4rem;
 }
 
-ul{
+nav ul{
     list-style: none;
     margin-right: 0;
 }
 
-ul{ border: 0.2rem solid red;
+nav ul{ border: 0.2rem solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    
     /* lo il estan centarados por referencia al ul*/
     
 }
@@ -109,3 +110,24 @@ ul li a:hover {
                  color: rgb(70, 127, 74);
                  transition: 500ms;
 }
+
+/* codigo pagina en tablet*/
+@media screen and (max-width:1225px){
+    nav ul{ 
+        flex-direction: column; 
+        /* hemos definido que el eje principal sera el y 
+          */
+    }
+    main div{
+        width: 45%; }
+    body{background-color: blue;
+    }
+
+@media screen and (max-width:425px){
+    body{background-color: aqua;
+    }   
+}
+
+}
+
+/* codigo pagina en selfphone*/
